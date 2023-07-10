@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Polling Website</title>
+    <link rel="shortcut icon" href="./img.jpeg" type="image/x-icon">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- sweet alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- CSS  -->
+    <link rel='stylesheet' type='text/css' href='style.css'>
+    <!-- icons cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    </link>
+    <!-- font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</head>
+
+<style>
+    #heading {
+        color: #050404;
+        display: flex;
+        justify-content: center;
+        text-decoration: underline;
+        margin: 0.7em;
+        /* align-items: center; */
+        /* flex-direction: column; */
+    }
+
+    body {
+        background-image: url('https://source.unsplash.com/1600x900/?landscape');
+        font-family: "Poppins", "sans-serif";
+        font-weight: bold;
+        /* margin: 0; */
+        /* padding: 0; */
+        box-sizing: border-box;
+        cursor: pointer;
+        background-color: #f0f5ff;
+    }
+
+    .poll {
+        color: #050404;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 400px;
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px 5px rgba(35, 30, 128, 0.05);
+    }
+
+    .poll .question {
+        padding: 20px;
+        color: #111;
+        font-size: 18px;
+        border-bottom: 1px solid #eee;
+    }
+
+    .poll .answers {
+        padding: 20px 20px 10px;
+    }
+
+    .poll .answers .answer {
+        position: relative;
+        width: 100%;
+        height: 40px;
+        padding: 0px 10px;
+        line-height: 40px;
+        color: #111;
+        margin-bottom: 10px;
+        border: 1px solid #d4d4d4;
+        border-radius: 10px;
+        cursor: pointer;
+        overflow: hidden;
+    }
+
+    .poll .answers .answer .selected {
+        border: 2px solid #8f9fe8;
+    }
+
+    .poll .answers .answer span.percentage-value {
+        position: absolute;
+        top: 50%;
+        right: 0px;
+        width: 40px;
+        transform: translateY(-50%);
+        color: #111;
+        font-size: 15px;
+    }
+
+    .poll .answers .answer span.percentage-bar {
+
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 0%;
+        height: 100%;
+        background: #ccd8f1;
+        z-index: -1;
+        transition: width 300ms ease-in-out;
+    }
+</style>
+
+<body>
+
+    <div id="heading">
+        <h1><b>Voting Website</b></h1>
+    </div>
+
+    <div class="poll">
+
+        <div class="question"></div>
+        <div class="answers"></div>
+
+    </div>
+
+    <!-- JS Link -->
+    <script src='main.js'></script>
+
+
+
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js "
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN "
+        crossorigin="anonymous "></script>
+</body>
+
+</html>

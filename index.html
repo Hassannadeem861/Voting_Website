@@ -27,7 +27,7 @@
 
 <style>
     #heading {
-        color: #050404;
+        color: whitesmoke;
         display: flex;
         justify-content: center;
         text-decoration: underline;
@@ -37,7 +37,8 @@
     }
 
     body {
-        background-image: url('https://source.unsplash.com/1600x900/?landscape');
+        /* background-image: url('https://source.unsplash.com/1600x900/?landscape'); */
+        /* background: url(./nature_-_31377\ \(1080p\).mp4); */
         font-family: "Poppins", "sans-serif";
         font-size: larger;
         font-weight: bold;
@@ -45,13 +46,13 @@
         /* padding: 0; */
         box-sizing: border-box;
         cursor: pointer;
-        background-color: #f0f5ff;
+        background-color: black;
     }
 
     .poll {
         color: #050404;
         position: absolute;
-        top: 50%;
+        top: 65%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 400px;
@@ -114,8 +115,17 @@
 
 <body>
 
-    <div id="heading">
-        <h1><b>Voting Website</b></h1>
+    <div>
+        <div id="heading">
+            <h1><b>Voting Website</b></h1>
+        </div> 
+    
+    <video width="1200" height="550" autoplay loop>
+        <source src="./nature_-_31377 (1080p).mp4" type="video/mp4">
+        <!-- <source src="movie.ogg" type="video/ogg"> -->
+        
+    
+      </video>
     </div>
 
     <div class="poll">
@@ -125,6 +135,9 @@
 
     </div>
 
+ 
+   
+   
     <!-- JS Link -->
     <script src='main.js'></script>
 
